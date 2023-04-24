@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!---->
+
+ <form action="">
+<h1>Payment Form</h1>
+<h2>Contact Information</h2>
+<p>Required fields are followed by *</p>
+<p>Name:* <input type="text" name= "name" required></p>
+
+<!--gender selection via radio option-->
+
+<fieldset>
+    <legend>Gender *</legend>
+<p>
+    Male: <input type="radio" name= "gender" id="male" required> 
+    female <input type="radio" name="gender" id = "female" required>
+</p>
+</fieldset>
+
+<!--prompts for address, emai and pincode-->
+
+<p>Address: <textarea name = "address" id="address" cols="100" row="8"></textarea></p>
+<p>Email: *<input type="email" name="email" id= "email" required ></p>
+<p>Pincode: *<input type="number" name="pincode" id="pincode" required></p> 
+
+<hr> <!--line break-->
+
+<!--payment info, card type headings-->
+
+<h2>Payment Information</h2>
+<p>Card Type: 
+
+    <!--card type drop-down options menu-->
+
+    <select name="card_type" id="card_type" >
+<option value="">--Select a Card Type--</option>
+<option value="visa">Visa</option>
+<option value="master card">Master Card</option>
+<option value="rupay">Rupay</option>
+    </select>
+
+</p>
+
+<!--prompting user to enter details of the card-->
+<p>
+    Card Number *<input type="number" name="card_number" id="card_number" required>
+</p>
+
+<p>
+    Expiration Date *<input type="date" name="exp_date" id="exp_date" required>
+</p>
+
+<p>
+    CVV *<input type="password" name="cvv" id="cvv" required>
+</p>
+
+<!--Pay now button to submit the form to server-->
+<input type="submit" value="Pay Now">
+
+</form>
+
+    </body>
+    </html>
